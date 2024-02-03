@@ -4,9 +4,9 @@ const Events = () => {
   return (
         <div class="px-4 lg:px-8 flex flex-col justify-center items-center lg:flex-row">
    
-    <div class="w-full lg:w-1/2 lg:pr-4 flex flex-col justify-center items-center">
+    <div class="w-full lg:w-1/2 lg:pr-4 flex flex-col justify-center gap-y-4 items-center">
         <h1 class="text-gradient text-4xl font-bold mb-4">Capture The Flag</h1>
-        <img src={Img3} alt="" class="rounded-full h-36 w-36"/>
+        <img src={Img3} alt="" class="rounded-full border-2 h-36 w-36"/>
         {/* <!-- <p class="text-gray-700 mb-4">Capture the Flag (CTF) events are cybersecurity competitions where participants, either individually or in teams, engage in a simulated environment to uncover and capture digital flags hidden within a set of challenges. These challenges span diverse categories such as cryptography, web exploitation, reverse engineering, forensics, and networking. The objective is to showcase participants' skills in ethical hacking and information security. The events often take place in a time-limited format, with competitors racing against the clock to solve as many challenges as possible.</p> --> */}
         <p class="text-white pl-4 lg:pl-0 mb-4">uptatum quo dignissimos?Teams or individuals leverage their expertise to exploit vulnerabilities, decrypt coded messages, analyze binaries, and navigate through realistic cybersecurity scenarios. CTFs can be hosted both locally, such as at universities or conferences, and online on dedicated platforms. Participants not only compete for prizes but also view the events as valuable learning opportunities to stay abreast of evolving cybersecurity techniques, making CTFs a dynamic and engaging way to foster skills and knowledge within the cybersecurity community.</p>
     </div>
