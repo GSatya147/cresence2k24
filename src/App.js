@@ -1,17 +1,11 @@
 import React, {useState} from 'react';
-import Banner from './components/Banner';
-import Header from './components/Header';
-import Nav from './components/Nav';
-import About from './components/About';
-import Events from './components/Events';
-// import Contact from './components/Contact';
-import Team from './components/Team'
 
-import Sponsors from './components/Sponsors';
-import Footer from './components/footer'
-import EventSlider from './components/Eventslider';
+import Home from "./components/home";
+import { BrowserRouter ,Route, Routes} from "react-router-dom";
+import Teams from "../src/pages/teams";
+import Events from "../src/pages/events";
+import Details from '../src/pages/detailspage';
 
-// bg-site bg-no-repeat bg-cover overflow-hidden
 const App = () => {
 
   const [loading, setLoading] = useState(true);
@@ -23,20 +17,18 @@ const App = () => {
     }, 2000);
   }
 
-  return (
-    !loading && (<div className='bg-site bg-no-repeat bg-cover overflow-hidden flex flex-col justify-center lg:h-[full]'>
-      <Header />
-      <Nav />
-      <Banner />
-      <About />
-      <Events />
-      <EventSlider />
-      {/* <Timeline /> */}
-      <Team />
-      {/* <Sponsors /> */}
-      <Footer />
-    </div>
-    )
+  return(
+    !loading && (<div className='bg-site'>
+      <BrowserRouter>
+        <Routes>
+          <Route index element={< Home/>}/>
+          {/* <Route path='/events' element={< Events/>}/> */}
+          <Route path='/teams' element={< Teams/>}/>
+          <Route path='/events' element = {< Events/>}/>
+          <Route path='/details' element = {< Details/>}/>
+        </Routes>
+      </BrowserRouter>
+    </div>)
   );
 };
 

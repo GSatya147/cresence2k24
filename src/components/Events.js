@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 import Img1 from '../assets/drone.avif'; 
@@ -19,6 +19,7 @@ const Events = () => {
             <button className='btn btn-sm'>Book Slot</button>
           </motion.div>
           <motion.div variants={fadeIn('right', 0.03)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.01 }} className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[248px] lg:w-[565px]'>
+            <Link to="/details">
             <div className='bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
             <img className='scale-125 transition-all duration-500' src={Img1} alt=''></img>
             <div className='absolute -bottom-full left-12 bottom-24 transition-all duration-500 z-40'>
@@ -27,11 +28,13 @@ const Events = () => {
             <div className='absolute -bottom-full left-12 bottom-14 transition-all duration-700 z-40'> 
               <span className='text-3xl text-white'>1st March</span>
             </div>
+            </Link>
           </motion.div>
 
         </div>
         <motion.div variants={fadeIn('left', 0.03)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.01 }} className='flex-1 flex-col lg:h-[490px] lg:w-[565px]'>
-         <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[542px]'>
+          <Link to="/details">
+          <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-[542px]'>
             <div className='bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
             <img className='scale-125 transition-all duration-500 lg:w-[565px]' src={Img2} alt=''></img>
             <div className='absolute -bottom-full left-12 bottom-24 transition-all duration-500 z-40'>
@@ -41,6 +44,7 @@ const Events = () => {
               <span className='text-3xl text-white'>1st & 2nd March</span>
             </div>
           </div>
+          </Link>
         </motion.div>
       </div>
       
