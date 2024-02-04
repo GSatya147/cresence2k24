@@ -9,12 +9,13 @@ import Team from './Team'
 import Sponsors from './Sponsors';
 import Footer from './footer'
 import EventSlider from './Eventslider';
-
+import ScrollToTop from './helper/ScrollToTop';
 const Home = () => {
 
 
   return (
     <div className='bg-site bg-no-repeat bg-cover overflow-hidden flex flex-col justify-center lg:h-[full]'>
+      < ScrollToTop/>
       <Header />
       <Nav />
       <Banner />

@@ -1,8 +1,11 @@
 import React from 'react';
-import Img3 from '../assets/bgmi.avif' 
+import Img3 from '../assets/bgmi.avif';
+import WorkshopsData from '../components/data/workshopsdata';
+
+
 const Events = () => {
   return (
-        <div class="px-4 lg:px-8 flex flex-col justify-center items-center lg:flex-row">
+        <div class="px-4 lg:px-16 flex flex-col justify-center items-center lg:flex-row">
    
     <div class="w-full lg:w-1/2 lg:pr-4 flex flex-col justify-center gap-y-4 items-center">
         <h1 class="text-gradient text-4xl font-bold mb-4">Capture The Flag</h1>
